@@ -12,7 +12,7 @@ function Home() {
     
     const loadNews = async () => {
        try{
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchQuery}&from=2024-07-19&to=2024-07-19&sortBy=popularity&apiKey==${process.env.REACT_APP_API_KEY}`);
+        const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchQuery}&from=2024-07-19&to=2024-07-19&sortBy=popularity&apiKey=66994ae0d3ad41af9932a64fa4b28652`);
 
         setNews(response.data.articles)
        }
